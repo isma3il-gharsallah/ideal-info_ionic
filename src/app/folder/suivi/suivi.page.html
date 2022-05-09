@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>SUIVI DE MAINTENANCE</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h4>Veuillez saisir votre identifiant</h4>
+
+  <form (ngSubmit)="SubmitForm($event)" >
+     <ion-input type="text" [(ngModel)]="todo.id_device" name="id_device"   style="background: honeydew;" placeholder='serial'></ion-input>
+      <ion-button expand="full" color="secondary" type="submit">SUIVI</ion-button>
+</form>
+<br>
+<br>
+<div style="text-align: center;" *ngIf='name'>
+<ion-label color="primary" *ngIf="submit">Bienvenue (M/Mme) {{name}}</ion-label>
+<br><br>
+<br>
+
+<ion-label *ngIf="submit"><h1>{{comments}} </h1></ion-label>
+</div>
+ </ion-content>

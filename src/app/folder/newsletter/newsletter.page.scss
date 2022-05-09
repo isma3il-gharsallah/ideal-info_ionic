@@ -1,0 +1,14 @@
+.vertical-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+   }
+
+   ion-content {
+    --background: linear-gradient(  #fff,#fdffff,#90f2ff);
+  }
+  ion-item {
+    --background: none;
+}
+ 
